@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora JavaScript</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>Calculadora JavaScript</h1>
+
+        <section class="seletor-modo">
+            <p>Escolha o tipo de calculadora:</p>
+
+            <label>
+                <input type="radio" name="modo" value="padrao" checked>
+                Padrão
+            </label>
+
+            <label>
+                <input type="radio" name="modo" value="cientifica">
+                Científica
+            </label>
+
+            <label>
+                <input type="radio" name="modo" value="trigonometrica">
+                Trigonométrica
+            </label>
+        </section>
+
+        <section class="calculadora">
+
+            <input 
+                type="text" 
+                id="display" 
+                class="display" 
+                readonly 
+                placeholder="0"
+            >
+
+            <div id="area-botoes" class="area-botoes">
+                <!-- Os botões serão criados pelo JavaScript -->
+            </div>
+
+        </section>
+
+        <section class="explicacao">
+            <h2 id="titulo-modo">Modo Padrão</h2>
+
+            <p id="descricao-modo">
+                Este modo permite realizar operações básicas como soma, subtração, multiplicação e divisão.
+            </p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
